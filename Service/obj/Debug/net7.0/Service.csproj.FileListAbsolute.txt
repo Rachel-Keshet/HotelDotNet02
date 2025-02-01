@@ -1,0 +1,4 @@
+C:\Users\RK\Documents\.net\projectNet\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RK\Documents\.net\projectNet\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+C:\Users\RK\Documents\.net\projectNet\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+C:\Users\RK\Documents\.net\projectNet\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache

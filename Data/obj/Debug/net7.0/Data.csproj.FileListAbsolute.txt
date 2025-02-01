@@ -1,0 +1,5 @@
+C:\Users\RK\Documents\.net\projectNet\DATA\obj\Debug\net7.0\Data.csproj.AssemblyReference.cache
+C:\Users\RK\Documents\.net\projectNet\DATA\obj\Debug\net7.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RK\Documents\.net\projectNet\DATA\obj\Debug\net7.0\Data.AssemblyInfoInputs.cache
+C:\Users\RK\Documents\.net\projectNet\DATA\obj\Debug\net7.0\Data.AssemblyInfo.cs
+C:\Users\RK\Documents\.net\projectNet\DATA\obj\Debug\net7.0\Data.csproj.CoreCompileInputs.cache
