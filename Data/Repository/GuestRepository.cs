@@ -1,4 +1,4 @@
-﻿using Core.IRepositories;
+﻿using Core;
 using Data;
 
 namespace Core
@@ -28,17 +28,20 @@ namespace Core
             return Guest;
         }
 
-        public Guest Update(Guest Guest)
+        public Guest Update(Guest guest)
         {
-            var existingGuest = GetById(Guest.Id);
-            if (existingGuest is null)
+            var existingGuest = GetById(guest.Id);
+            if (existingGuest == null)
             {
                 throw new Exception("Guest not found");
             }
-            existingGuest.Name = Guest.Name;
-            existingGuest.Email = Guest.Email;
+
+            existingGuest.Name = guest.Name;
+            existingGuest.Email = guest.Email;
+
             return existingGuest;
         }
+
 
         public void Delete(int id)
         {

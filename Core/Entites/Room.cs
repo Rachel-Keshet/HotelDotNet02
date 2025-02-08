@@ -3,8 +3,9 @@
 /// <summary>
 /// Summary description for Class1
 /// </summary>
-
-        public class Room
+namespace Core
+{
+    public class Room
     {
         public int Id { get; set; }
         public string RoomNumber { get; set; }
@@ -22,3 +23,4 @@
             IsAvailable = isAvailable;
         }
     }
+}

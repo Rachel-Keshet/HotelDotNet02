@@ -27,17 +27,20 @@ namespace Core
             return Reservation;
         }
 
-        public Reservation Update(Reservation Reservation)
+        public Reservation Update(Reservation reservation)
         {
-            var existingReservation = GetById(Reservation.Id);
-            if (existingReservation is null)
+            var existingReservation = GetById(reservation.Id);
+            if (existingReservation == null)
             {
                 throw new Exception("Reservation not found");
             }
-            existingReservation.Id = Reservation.Id;
-            existingReservation.Status = Reservation.Status;
+
+            existingReservation.Status = reservation.Status; // Update status from the passed reservation
+
+            // No need to update Id, as it should stay the same (assuming Id is immutable).
             return existingReservation;
         }
+
 
         public void Delete(int id)
         {

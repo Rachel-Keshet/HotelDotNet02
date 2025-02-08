@@ -1,7 +1,8 @@
 ﻿using Microsoft.Graph;
 using Microsoft.Graph.Models;
+using Data;
 
-namespace Data
+namespace Core
 {
     public class RoomRepository : IRoomRepository
     {
@@ -12,9 +13,14 @@ namespace Data
             _context = context;
         }
 
-        public List<Room> GetAll()
+        public List<Room> GetRooms()
         {
             return _context.Rooms.ToList();
+        }
+
+        public List<Room> GetAll(List<Room> rooms)
+        {
+            return rooms;
         }
 
         public Room? GetById(int id)
@@ -28,15 +34,16 @@ namespace Data
             return Room;
         }
 
-        public Room Update(Room Room)
+        public Room Update(Room room)
         {
-            var existingRoom = GetById(Room.Id);
-            if (existingRoom is null)
+            var existingRoom = GetById(room.Id);
+            if (existingRoom == null)
             {
                 throw new Exception("Room not found");
             }
-            existingRoom.Id = Room.Id;
-            existingRoom.Type = Room.Type;
+
+            existingRoom.Type = room.Type;
+
             return existingRoom;
         }
 
