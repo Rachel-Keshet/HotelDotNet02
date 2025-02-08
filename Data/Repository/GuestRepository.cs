@@ -31,12 +31,12 @@ namespace Core
         public Guest Update(Guest guest)
         {
             var existingGuest = GetById(guest.Id);
-            if (existingGuest == null)
-            {
-                throw new Exception("Guest not found");
-            }
+            //if (existingGuest is null)
+            //{
+            //    throw new Exception("Guest not found");
+            //}
 
-            existingGuest.Name = guest.Name;
+            existingGuest!.Name = guest.Name;
             existingGuest.Email = guest.Email;
 
             return existingGuest;

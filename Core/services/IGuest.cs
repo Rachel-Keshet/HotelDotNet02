@@ -4,12 +4,12 @@ namespace Core
 {
     public interface IGuest
     {
-        IEnumerable<Guest> GetAllGuests();  // Get all guests
-        void AddGuest(Guest guest);          // Add a new guest
-        void RemoveGuest(Guest guest);       // Remove an existing guest
-        object GetList();
-        object GetById(int id);
+        //IEnumerable<Guest> GetAllGuests();  // Get all guests
+        Guest Add(Guest guest);          // Add a new guest
+        //void RemoveGuest(Guest guest);       // Remove an existing guest
+        Guest? GetById(int id);
         void Delete(int id);
-        object Update(Guest guest);
+        Guest Update(Guest guest);
+        List<Guest> GetList();
     }
 }

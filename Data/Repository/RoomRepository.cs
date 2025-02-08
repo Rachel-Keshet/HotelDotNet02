@@ -18,12 +18,13 @@ namespace Core
             return _context.Rooms.ToList();
         }
 
-        public List<Room> GetAll(List<Room> rooms)
+        public List<Room> GetAll()
         {
-            return rooms;
-        }
+            return _context.Rooms.ToList();
 
-        public Room? GetById(int id)
+
+        }
+            public Room? GetById(int id)
         {
             return _context.Rooms.FirstOrDefault(x => x.Id == id);
         }
@@ -37,12 +38,12 @@ namespace Core
         public Room Update(Room room)
         {
             var existingRoom = GetById(room.Id);
-            if (existingRoom == null)
-            {
-                throw new Exception("Room not found");
-            }
+            //if (existingRoom is null)
+            //{
+            //    throw new Exception("Room not found");
+            //}
 
-            existingRoom.Type = room.Type;
+            existingRoom!.Type = room.Type;
 
             return existingRoom;
         }
@@ -57,7 +58,5 @@ namespace Core
         }
     }
 
-    public interface IRoomRepository
-    {
-    }
+    
 }

@@ -1,8 +1,7 @@
-﻿
+﻿using Core;
+using System;
 
-using Core;
-
-
+namespace Service;
 public class RoomService : IRoom
 {
     private readonly IRoomRepository _RoomRepository;
@@ -37,38 +36,43 @@ public class RoomService : IRoom
         _RoomRepository.Delete(id);
     }
 
-    public IEnumerable<Room> GetAllRooms()
-    {
-        throw new NotImplementedException();
-    }
+    //public Room AddRoom(Room room)
+    //{
+    //    throw new NotImplementedException();
+    //}
 
-    public void AddRoom(Room room)
-    {
-        throw new NotImplementedException();
-    }
+    //public IEnumerable<Room> GetAllRooms()
+    //{
+    //    throw new NotImplementedException();
+    //}
 
-    public void RemoveRoom(Room room)
-    {
-        throw new NotImplementedException();
-    }
+    //public void AddRoom(Room room)
+    //{
+    //    throw new NotImplementedException();
+    //}
 
-    public object FirstOrDefault(Func<object, bool> value)
-    {
-        throw new NotImplementedException();
-    }
+    //public void RemoveRoom(Room room)
+    //{
+    //    throw new NotImplementedException();
+    //}
 
-    object IRoom.GetList()
-    {
-        throw new NotImplementedException();
-    }
+    //public object FirstOrDefault(Func<object, bool> value)
+    //{
+    //    throw new NotImplementedException();
+    //}
 
-    object IRoom.GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
+    //object IRoom.GetList()
+    //{
+    //    throw new NotImplementedException();
+    //}
 
-    object IRoom.Update(Room room)
-    {
-        throw new NotImplementedException();
-    }
+    //object IRoom.GetById(int id)
+    //{
+    //    throw new NotImplementedException();
+    //}
+
+    //object IRoom.Update(Room room)
+    //{
+    //    throw new NotImplementedException();
+    //}
 }

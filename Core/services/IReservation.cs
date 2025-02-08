@@ -2,10 +2,12 @@
 
 public interface IReservation
 {
-    IEnumerable<Reservation> GetAllReservations();  // Get all Reservations
-    void AddReservation(Reservation guest); // Add a new guest
-    void RemoveReservation(Reservation guest);
-    object GetReservationById(int id);
-    void UpdateReservation(int id, Reservation reservation);
-    void DeleteReservation(int id);
+    //IEnumerable<Reservation> GetAllReservations();  // Get all Reservations
+    Reservation Add(Reservation reservation); // Add a new guest
+    //void RemoveReservation(Reservation guest);
+    Reservation GetById(int id);
+    Reservation Update( Reservation reservation);
+    void Delete(int id);
+    List<Reservation> GetList();
+
 }

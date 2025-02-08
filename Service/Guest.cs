@@ -37,35 +37,40 @@ namespace Core
             _GuestRepository.Delete(id);
         }
 
-        public IEnumerable<Guest> GetAllGuests()
-        {
-            throw new NotImplementedException();
-        }
+        //public Guest AddGuest(Guest guest)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public void AddGuest(Guest guest)
-        {
-            throw new NotImplementedException();
-        }
+        //public IEnumerable<Guest> GetAllGuests()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public void RemoveGuest(Guest guest)
-        {
-            throw new NotImplementedException();
-        }
+        //public void AddGuest(Guest guest)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        object IGuest.GetList()
-        {
-            throw new NotImplementedException();
-        }
+        //public void RemoveGuest(Guest guest)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        object IGuest.GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
+        //object IGuest.GetList()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        object IGuest.Update(Guest guest)
-        {
-            throw new NotImplementedException();
-        }
+        //object IGuest.GetById(int id)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //object IGuest.Update(Guest guest)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
 

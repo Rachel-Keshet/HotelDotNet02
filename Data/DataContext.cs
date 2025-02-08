@@ -8,8 +8,7 @@ namespace Data
 
 	public class DataContext : DbContext
 	{
-
-		public DbSet<Guest> Guests { get; set; }
+        public DbSet<Guest> Guests { get; set; }
 		public DbSet<Reservation> Reservations { get; set; }
 		public DbSet<Core.Room> Rooms { get; set; }
         //public DataContext(DbContextOptions<DataContext> options): base(options) { }
@@ -19,6 +18,7 @@ namespace Data
         }
     }
 }
+(localdb)\ProjectModels
 
 
 

@@ -30,12 +30,12 @@ namespace Core
         public Reservation Update(Reservation reservation)
         {
             var existingReservation = GetById(reservation.Id);
-            if (existingReservation == null)
-            {
-                throw new Exception("Reservation not found");
-            }
+            //if (existingReservation is null)
+            //{
+            //    throw new Exception("Reservation not found");
+            //}
 
-            existingReservation.Status = reservation.Status; // Update status from the passed reservation
+            existingReservation!.Status = reservation.Status; // Update status from the passed reservation
 
             // No need to update Id, as it should stay the same (assuming Id is immutable).
             return existingReservation;
